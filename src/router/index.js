@@ -18,6 +18,18 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue")
+  },
+  {
+    path: "/todocompare",
+    name: "TodoCompare",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/TodoCompare.vue")
+  },
+  {
+    path: "/visualcompare",
+    name: "VisualCompare",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/VisualCompare.vue")
   }
 ];
 

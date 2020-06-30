@@ -2,9 +2,18 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/todocompare">TODO Comparison</router-link> |
+      <router-link to="/visualcompare">Framework Comparison</router-link>
     </div>
-    <router-view />
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
